@@ -1,0 +1,34 @@
+body{
+    height: 100%;
+    width: 100%;
+    background-color: lightgray;
+}
+.table1{
+    background-image: url(../img/bb1.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 40%;
+    margin-top: 0px;
+    height: 100%;
+}
+.table2{
+    position: relative;
+    left: 8%;
+}
+h1{
+    margin: 0% 40%;
+}
+/*下拉菜单*/
+table{
+    margin: 30% 25%;
+    border: 0px;
+}
+}
+th{
+    border-radius: 3px;
+}
+td{
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px;
+}
+
