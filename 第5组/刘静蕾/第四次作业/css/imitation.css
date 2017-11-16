@@ -1,0 +1,360 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+/*大标题*/
+h1,h2{
+    margin-left: 40%;
+    letter-spacing: 10px;
+    font-weight: 400;
+}
+/*导航栏*/
+.guide{
+    background-color: white;
+    border-bottom:1px solid lightgrey;
+    font-size: 18px; 
+    padding-left: 5%;
+    height: 80px;
+}
+#logo{
+    position: relative;
+    top:15px;
+}
+#luxury{
+    color: white;
+    font-size: 10px;
+    border: 1px solid rgb(5, 151, 5);
+    background-color: rgb(5, 151, 5);
+    padding:8px; 
+    margin-left: -20px;
+}
+#pay{
+    font-size:10px;
+    border:1px solid lightgrey; 
+    padding: 8px;
+    margin-left: -30px;
+}
+.input-box{
+    height: 25px;
+    width: 15%;
+    margin-left: 50px;
+}
+/*小导航栏*/
+span{
+    margin-right: 35px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.l-guide{
+    border-bottom:1px solid lightgrey;  
+    padding-left: 21%;
+    height: 40px;
+    padding-top:15px; 
+}
+/*歌单推荐*/
+.type{
+    margin-left: 25%;
+}
+.recommend-list span{
+    padding-left: 1%;
+}
+.recommend-list ul{
+    list-style: none;
+    margin-left: 5%;
+}
+.recommend-list li{
+    margin-right:0%; 
+    float: left;
+    padding-right:10px; 
+
+}
+.recommend-list img{
+    width: 220px;
+    height: 220px;
+}
+.number{
+    color: gray;
+}
+/*新歌首发*/
+#new-m{
+    margin-top: 22%;
+}
+.fir-music{
+    margin-left:7% ;
+    margin-top: 3%;
+}
+.fir-music img{
+    height: 100px;
+    width: 100px;
+}
+#pl-all{
+    padding: 5px 15px;
+    border:1px solid grey;
+    margin-left: 7%;
+}
+
+/*精彩推荐*/
+.recommend-more span{ 
+    margin-left: 7%;
+}
+.recommend-more img{
+    width: 37%;
+    padding-right:20px; 
+}
+.country1{
+    margin-left: 13%;
+}
+.country span{
+    padding-right:10px; 
+}
+.country2{
+    margin-left:30.5%; 
+}
+/*新碟首发*/
+#more{
+    float: right;
+    margin-right: 10%;
+    margin-left: 10% 
+}
+.fir-cd img{
+    width: 220px;
+    height: 220px;
+}
+.fir-2{
+    display: inline-block;
+}
+/*排行榜*/
+.rank{
+    min-height: 300px;
+}
+.r{
+    position: absolute;
+    left: 13%;
+    color: white
+}
+.rank a{
+    color: white
+}
+.r h1,h2{
+    margin-left: 10%;
+    letter-spacing: 0;
+}
+.r1{
+    padding-top: -10px;
+    background-image: url(../img/rank&foot/bg_index_top.jpg);
+    display:block;
+    width: 164px;
+    height: 567px;
+    margin-left: 0em;
+    background-position: 0px 0px;
+    position: absolute;
+    top: 0%;
+}
+.r2{
+    background-image: url(../img/rank&foot/bg_index_top.jpg);
+    display:block;
+    width: 164px;
+    height: 567px;
+    margin-left: 0em;
+    background-position: -224px 0px;
+    position: absolute;
+    top: 0%;
+    left: 120%;
+
+}
+.r3{
+    background-image: url(../img/rank&foot/bg_index_top.jpg);
+    display:block;
+    width: 164px;
+    height: 567px;
+    margin-left: 0em;
+    background-position: -448px 0px;
+    position: absolute;
+    top: 0%;
+    left: 240%;
+}
+.r4{
+    background-image: url(../img/rank&foot/bg_index_top.jpg);
+    display:block;
+    width: 164px;
+    height: 567px;
+    margin-left: 0em;
+    background-position: -672px 0px;
+    position: absolute;
+    top: 0%;
+    left: 360%;
+}
+.r5{
+    background-image: url(../img/rank&foot/bg_index_top.jpg);
+    display:block;
+    width: 164px;
+    height: 567px;
+    margin-left: 0em;
+    background-position: -896px 0px;
+    position: relative;
+    right: -480%;
+    margin-top: -12%
+}
+ol{
+    margin-top: 10px;
+    
+}
+/*MV*/
+.mv{
+    margin-top: 45%;
+}
+.country3{
+    margin-left: 24%;
+}
+.mv-pic{
+    margin-right: 10%;
+}
+.mv-pic img{
+    width: 200px;
+    height: 92.73px;
+}
+
+/*页脚*/
+footer{
+    background-color: rgba(0, 0, 0, 0.767);
+    color: lightgray;
+    position: absolute;
+    margin-top: 25%;
+    width: 100%;
+    margin-left: -10px;
+    min-height: 80%;
+}
+footer a{
+    color: lightgray;
+}
+.download{
+    left: 8%;
+    position: absolute;
+    top: 15%;
+}
+
+.bot{
+    position: absolute;
+    top: 85%;
+    left: 25%;
+}
+#bot1{
+     width: 100%;
+}
+.dw-pic{
+    width: 150%;
+    margin-left: -25%;
+}
+footer li{
+    margin-left: 30px;
+    margin-top: 5%;
+    text-align: center;
+}
+.icon1{
+    background-image: url(../img/rank&foot/footer.png);
+    display:block;
+    width: 37px;
+    height: 48px;
+    line-height: 48px;
+    margin-left: 0em;
+    background-position: -2px 0px;
+}
+.icon2{
+    background-image: url(../img/rank&foot/footer.png);
+    display:block;
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    margin-left: 0em;
+    background-position: -92px 0px;
+}
+.icon3{
+    background-image: url(../img/rank&foot/footer.png);
+display:block;
+width: 40px;
+height: 48px;
+line-height: 48px;
+margin-left: 1em;
+background-position: -190px 0px;
+}
+.icon4{
+    background-image: url(../img/rank&foot/footer.png);
+display:block;
+width: 35px;
+height: 48px;
+line-height: 48px;
+margin-left: 1em;
+background-position: -279px 0px;
+}
+
+.product{
+    float: right;
+    position: absolute;
+    top: 15%;
+    right: 20%
+}
+.product ul{
+   margin-left: -12.5%;
+   margin-top: 4%;
+   width: 70%;
+}
+.p-icon1{
+    background-image: url(../img/rank&foot/footer.png);
+    display:block;
+    width: 42px;
+    height: 48px;
+    line-height: 48px;
+    margin-left: 1em;
+    background-position: -370px 0px;
+}
+.p-icon2{
+    background-image: url(../img/rank&foot/footer.png);
+    display:block;
+    width: 42px;
+    height: 48px;
+    line-height: 48px;
+    margin-left: 1em;
+    background-position: -463px 0px;
+}
+.p-icon3{
+    background-image: url(../img/rank&foot/footer.png);
+    display:block;
+    width: 42px;
+    height: 48px;
+    line-height: 48px;
+    margin-left: 1em;
+    background-position: -563px 0px;
+}
+
+.coop{
+    position: absolute;
+    right: 0%;
+    top: 15%;
+    width: 25%;
+    display: inline-table;
+}
+.coop ul{
+    margin-left: -17%;
+}
+
+.open-desk{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+}
+.open-desk ul{
+    margin-left: -14%;
+}
+
+#bot2{
+    margin-top: 10px;
+    position: absolute;
+    left: 20%;
+}
+#bot3{
+    margin-top: 40px;
+    position: absolute;
+    left: 25%;
+}
