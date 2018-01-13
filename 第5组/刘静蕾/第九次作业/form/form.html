@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="form.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+    <script type="text/javascript" src="http://www.imooc.com/data/jquery.validate.js"></script>
+    <script type="text/javascript" src="http://www.imooc.com/data/jquery.validate.messages_cn.js"></script>
+</head>
+
+<body>
+    <div id="form">
+        <h3>validate</h3>
+        <form id="myform" method="get" action="#">
+            <span class="name">姓名:</span>
+            <input class="name" type="text">
+            <span class="name"></span>
+            <br/>
+            <span class="email">邮箱:</span>
+            <input class="email">
+            <span class="email"></span>
+            <br/>
+            <span class="password">密码:</span>
+            <input class="password" value="请输入6-12位密码">
+            <span class="password"></span>
+            <br/>
+            <span class="pass-tw">请再次输入密码</span>
+            <input class="pass-tw">
+            <span class="pass-tw"></span>
+            <br/>
+            <button value="注册" type="submit">注册</button>
+        </form>
+    </div>
+</body>
+<script type="text/javascript">
+$(function(){
+    $('#myform').validate({
+
+    })
+})
+</script>
+</html>

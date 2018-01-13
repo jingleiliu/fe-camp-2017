@@ -1,0 +1,73 @@
+@keyframes btn-hover{
+
+}
+html,body{
+    opacity: 60%;
+    width: 100%;
+    height: 100%;
+}
+#slideshow{
+    display: flex;
+    margin-left: 10%;
+    overflow: hidden;
+    
+}
+ul{
+    width: 577px;
+   display: flex;
+   border: 1px solid darkblue;
+   padding: 0px;
+
+}
+li{
+    display: block;
+    background-image: url(img/ssj-ttl.jpg);
+    width: 115.4px;
+    height: 325px;
+}
+#jy{
+    background-position: 0px 0px;
+    
+}
+#db{
+    background-position: -117px 0px;
+    display: none;
+}
+#fjw{
+    background-position: -232px 0px;
+    display: none
+}
+#sxc{
+    background-position: -349px 0px;
+    display: none;
+}
+#nglj{
+    background-position: -465px 0px;
+    display: none
+}
+
+#buttons{
+    margin-left: 13%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+button{
+    border: 1px solid black;
+    border-radius: 5%;
+    padding: 5px;
+    background-color: rgb(1, 1, 116);
+    color: white;
+    margin-right: 75px;
+}
+button:hover{
+    background-color: darkblue;
+}
+
+#show-all{
+    margin-top: 2%;
+    margin-left: 28%;
+}
+#show-all>button:hover{
+    padding: 10px;
+    font-size: 18px;
+}

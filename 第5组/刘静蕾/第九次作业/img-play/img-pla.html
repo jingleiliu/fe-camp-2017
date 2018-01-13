@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="img-pla.css" type="text/css" rel="stylesheet">
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+</head>
+<body>
+    <div id="slideshow">
+        <ul>
+            <li id="jy"></li>
+            <li id="db"></li>
+            <li id="fjw"></li>
+            <li id="sxc"></li>
+            <li id="nglj"></li>
+            
+        </ul>
+    </div>
+    <div id="buttons">
+        <button id="JY">君夜</button>
+        <button id="BCY">白楚裔</button>
+        <button id="FJW">傅郡望</button>
+        <button id="SXC">司雪辰</button>
+        <button id="NGLJ">南宫良景</button>
+        
+        
+    </div>
+    <div id="show-all"><button>全部展示</button></div>
+    
+    <script type="text/javascript">
+    //单独展示
+    $('#JY').click(function(){
+        $('#jy').toggle(3000)
+    })
+    $('#BCY').click(function(){
+        $('#db').toggle(3000)
+    })
+    $('#FJW').click(function(){
+        $('#fjw').toggle(3000)
+    })
+    $('#SXC').click(function(){
+        $('#sxc').toggle(3000)
+    })
+    $('#NGLJ').click(function(){
+        $('#nglj').toggle(3000)
+    })
+    //全部展示
+    $('#show-all button').click(function(){
+        var i=0
+        setInterval(pre,3000)
+        function pre(){
+           $('li:eq('+i+')').fadeIn(3000)
+           i++
+        }
+    
+
+        
+    })
+    </script>
+</body>
+</html>

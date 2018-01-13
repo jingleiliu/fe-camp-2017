@@ -1,0 +1,78 @@
+body {
+    background-color: lightgray
+}
+
+div {
+    text-align: center
+}
+
+#top {
+    color: white;
+    margin-top: 20%;
+    font-size: 20px;
+}
+
+#cir {
+    margin-top: 5%;
+}
+
+.bla-cir {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 100%;
+    height: 16px;
+    width: 16px;
+    margin-left: 2%;
+}
+
+#num {
+    margin-top: 10%;
+    margin-left: -4%;
+}
+
+#num>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.number {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 100%;
+    height: 70px;
+    width: 70px;
+    font-size: 30px;
+    margin-left: 8%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.char {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#Eme {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 5%;
+    left: 5%
+}
+
+#Del {
+    float: right;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="lock.css" rel="stylesheet" type="text/css">
+    <script src="https://www.imooc.com/static/lib/jquery/1.9.1/jquery.js"></script>
+</head>
+<body>
+    <div id="top">Touch ID or Enter passcode</div>
+<!-- class="bla-cir"为已输入密码提示 -->    
+    <div id="cir"><span class="bla-cir"></span>
+    <span class="bla-cir"></span>
+    <span class="bla-cir"></span>
+    <span class="bla-cir"></span>
+    <span class="bla-cir"></span>
+    <span class="bla-cir"></span></div>
+    
+    <!-- class="number"为数字键 -->
+    <div id="num"><div>
+    <span class="number" id="1">1</span>    
+    <span class="number" id="2">2<div class="char">ABC</div></span>    
+    <span class="number" id="3">3<div class="char">DEF</div></span></div>    
+    <div>
+    <span class="number" id="4">4<div class="char">GHI</div></span>    
+    <span class="number" id="5">5<div class="char">JKL</div></span>    
+    <span class="number" id="6">6<div class="char">MNO</div></span></div>    
+    <div>
+    <span class="number" id="7">7<div class="char">PQRS</div></span>    
+    <span class="number" id="8">8<div class="char">TUV</div></span>    
+    <span class="number" id="9">9<div class="char">WXYZ</div></span></div>    
+    <div>
+    <span class="number" id="0">0</span></div>    
+</div>    
+<script type="text/javascript">
+var n=0
+    localStorage.setItem('password','123456')
+    var strpass=''
+    $('.number').click(function(e){
+    strpass+=$(this).attr('id')
+    $('.bla-cir:eq('+n+')').css('background','grey')
+    n++
+    if(n>=6){
+        if(strpass==localStorage.getItem('password')){
+            alert('unlocked')
+            strpass=''
+            $('.bla-cir').css('background','lightgrey')
+        }
+        else{
+            alert('failed to enter, please try again')
+        n=0;
+        strpass='';
+        $('.bla-cir').css('background','lightgray')
+        
+    }
+}    
+    
+})
+
+
+
+    $(".number").hover(
+    function(){
+        $(this).css("background-color","gray");
+    },
+    function(){
+        $(this).css("background-color","lightgrey")
+    })
+    </script>
+<!-- id="Eme"& id="Del" 为页面下方按键-->
+    <a id="Eme">Emergency</a>
+    <a id="Del">Delete</a> 
+    <script type="text/javascript">
+    var j=5
+    $("#Del").click(function(){
+       $('.bla-cir:eq('+j+')').css('background','lightgray');
+       j--
+       if(j<-1){
+           j=5
+           $('.bla-cir:eq('+j+')').css('background','lightgray');
+           j--
+       }
+    })
+    $("#Del").hover(
+    function(){
+        $(this).css("color","gray")
+    },
+    function(){
+        $(this).css("color","white")
+    })
+    $("#Eme").hover(
+    function(){
+        $(this).css("color","gray")
+    },
+    function(){
+        $(this).css("color","white")
+    })
+    $("#Eme").click(function(){
+        alert("only 911 could be dialed!")
+    })
+    </script>   
+</body>
+</html>
