@@ -1,0 +1,495 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box{
+    width: 20%;
+    height: 20%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid lightgray;
+}
+/*gif1*/
+@keyframes gif1{
+    from{
+        border-color: lightblue;
+        height: 30px;
+    }
+    to{
+        border-color: lightgreen;
+        height: 15px;
+    }
+}
+.gif1-col{
+    display: inline-block;
+    border: 2px solid lightgreen;
+    border-radius: 4px;
+    height: 15px;
+    margin-left: 5px;
+    animation: gif1 1s infinite;
+    animation-timing-function: ease;
+}
+.gif1-col:nth-child(1){
+    animation-delay: .05s
+}
+.gif1-col:nth-child(2){
+    animation-delay: .29s;
+}
+.gif1-col:nth-child(3){
+    animation-delay: .43s;
+}.gif1-col:nth-child(4){
+    animation-delay: .57s;
+}.gif1-col:nth-child(5){
+    animation-delay: .71s;
+}
+/*gif2*/
+@keyframes gif2{
+    from{
+       background-color: white;
+    }
+
+    to{
+        background-color: lightgreen;
+    }
+}
+.gif2-cir{
+    border-radius: 100%;
+    background-color: white;
+    margin-left: 10px;
+    width: 10px;
+    height: 10px;
+    animation: gif2 .6s infinite;
+    animation-timing-function: ease;
+}
+.gif2-cir:nth-child(1){
+    animation-delay: .1s
+}
+.gif2-cir:nth-child(2){
+    animation-delay: .2s
+}
+
+.gif2-cir:nth-child(3){
+    animation-delay: .3s
+}
+.gif2-cir:nth-child(4){
+    animation-delay: .4s
+}
+.gif2-cir:nth-child(5){
+    animation-delay: .5s
+}
+/*gif3*/
+@keyframes gif3{
+    from{
+        border-color: white;
+        background-color: white;
+        transform: scale(1.2)
+     }
+ 
+     to{
+         border-color: lightgreen;
+         background-color: lightgreen;
+         transform: scale(0)
+     }
+}
+.gif3-cir{
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: white;
+    margin-left: 15px;
+    width: 10px;
+    height: 10px;
+    animation: gif3 .6s infinite;
+    animation-timing-function: linear;
+}
+.gif3-cir:nth-child(1){
+    animation-delay: .1s
+}
+.gif3-cir:nth-child(2){
+    animation-delay: .2s
+}
+.gif3-cir:nth-child(3){
+    animation-delay: .3s
+}
+.gif3-cir:nth-child(4){
+    animation-delay: .4s
+}
+.gif3-cir:nth-child(5){
+    animation-delay: .5s
+} 
+/*gif4*/
+@keyframes gif4{
+    from{
+        background-color: white;
+        transform: rotate(0deg);
+        left: 0px;
+    }
+    to{
+        background-color: lightgreen;
+        transform: rotate(90deg);
+        left: 10px;
+    }
+}
+.gif4-sq{
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    background-color: white;
+    transform: rotate(0deg);
+    animation: gif4 .6s infinite;
+    animation-timing-function: ease-in;
+    position: relative;
+}
+.gif4-sq:nth-child(1){
+    animation-delay: .1s
+}
+.gif4-sq:nth-child(2){
+    animation-delay: .2s
+}
+.gif4-sq:nth-child(3){
+    animation-delay: .3s
+}
+.gif4-sq:nth-child(4){
+    animation-delay: .4s
+}
+.gif4-sq:nth-child(5){
+    animation-delay: .5s
+}
+/* gif5 repeatedly */
+@keyframes gif5{
+    from{
+        background-color: lightgreen;
+    }
+    to{
+        background-color: white;
+    }
+}
+.gif5-cir{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -5px;
+    width: 30px;
+    height: 10px;
+    transform-origin: 0% 0%;
+}
+
+.gif5-cir>.circle {
+    position: absolute;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:lightgreen;
+    animation: gif5 .7s infinite;    
+    
+}
+.gif5-cir:nth-child(1){
+    transform: rotate(0deg);
+}
+.gif5-cir:nth-child(1)>.circle{
+    animation-delay: 0s;
+}
+.gif5-cir:nth-child(2){
+    transform: rotate(45deg);
+    animation-delay: .1s
+}
+.gif5-cir:nth-child(2)>.circle{
+    animation-delay: .1s
+}
+.gif5-cir:nth-child(3){
+    transform: rotate(90deg)
+}
+.gif5-cir:nth-child(3)>.circle{
+    animation-delay: .2s;
+}
+.gif5-cir:nth-child(4){
+    transform: rotate(135deg);
+}
+.gif5-cir:nth-child(4)>.circle{
+    animation-delay: .3s;
+}
+.gif5-cir:nth-child(5){
+    transform: rotate(180deg);
+}
+.gif5-cir:nth-child(5)>.circle{
+    animation-delay: .4s;
+}
+.gif5-cir:nth-child(6){
+    transform: rotate(225deg);
+} 
+.gif5-cir:nth-child(6)>.circle{
+    animation-delay: .5s;
+}
+.gif5-cir:nth-child(7){
+    transform: rotate(270deg);
+} 
+.gif5-cir:nth-child(7)>.circle{
+    animation-delay: .6s;
+}
+.gif5-cir:nth-child(8){
+    transform: rotate(315deg);
+} 
+.gif5-cir:nth-child(8)>.circle{
+    animation-delay: .7s;
+}
+/* gif6 */
+@keyframes gif6{
+    from{
+        transform: scale(1.2);
+    }
+    to{
+        transform: scale(0);
+    }
+}
+.gif6-cir{
+    position: absolute;
+    margin-top: -5px;
+    width: 30px;
+    height: 10px;
+
+}
+.gif6-cir>.circle {
+    position: absolute;
+    right: 30px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:lightgreen;
+    animation: gif6 .7s infinite;    
+    
+}
+.gif6-cir:nth-child(1){
+    transform: rotate(0deg);
+}
+.gif6-cir:nth-child(1)>.circle{
+    animation-delay: 0s;
+}
+.gif6-cir:nth-child(2){
+    transform: rotate(45deg);
+    animation-delay: .1s
+}
+.gif6-cir:nth-child(2)>.circle{
+    animation-delay: .1s
+}
+.gif6-cir:nth-child(3){
+    transform: rotate(90deg)
+}
+.gif6-cir:nth-child(3)>.circle{
+    animation-delay: .2s;
+}
+.gif6-cir:nth-child(4){
+    transform: rotate(135deg);
+}
+.gif6-cir:nth-child(4)>.circle{
+    animation-delay: .3s;
+}
+.gif6-cir:nth-child(5){
+    transform: rotate(180deg);
+}
+.gif6-cir:nth-child(5)>.circle{
+    animation-delay: .4s;
+}
+.gif6-cir:nth-child(6){
+    transform: rotate(225deg);
+} 
+.gif6-cir:nth-child(6)>.circle{
+    animation-delay: .5s;
+}
+.gif6-cir:nth-child(7){
+    transform: rotate(270deg);
+} 
+.gif6-cir:nth-child(7)>.circle{
+    animation-delay: .6s;
+}
+.gif6-cir:nth-child(8){
+    transform: rotate(315deg);
+} 
+.gif6-cir:nth-child(8)>.circle{
+    animation-delay: .7s;
+}
+
+
+@keyframes gif7{
+    from{
+        transform: translate(-100%);
+    }
+    to{
+        transform: translate(100%);
+    }
+}
+#gif7-coll{
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    height: 8px;
+    width: 100px;
+    background-color: lightblue;
+    overflow: hidden;
+    position: absolute;
+
+}
+#gif7-colt{
+    display: inline-block;
+    position: relative;
+    top:-8px;
+    width: 100px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: lightgreen;
+    animation: gif7 1.5s infinite;
+    animation-timing-function: linear;
+}
+/* gif8 */
+@keyframes gif8{
+    from{
+        background-color: lightgreen
+    }
+    to{
+        background-color: white;
+    }
+}
+.gif8-col{
+    
+    position: absolute;
+    width: 20px;
+    height: 10px;
+    margin-top: -5px;
+    margin-left: -10px;
+}
+.gif8-col>.column{
+    display: inline-block;
+    top: 0px;
+    left: 20px;
+    border-radius: 3px;
+    position: relative;
+    width: 20px;
+    height: 10px;
+    background-color: lightgreen;
+    animation: gif8 1s infinite;
+}
+.gif8-col:nth-child(1){
+    transform: rotate(0deg);
+}
+.gif8-col:nth-child(1)>.column{
+    animation-delay: 0s;
+}
+.gif8-col:nth-child(2){
+    transform: rotate(45deg);
+}
+.gif8-col:nth-child(2)>.column{
+    animation-delay: .1s;
+}
+.gif8-col:nth-child(3){
+    transform: rotate(90deg);
+}
+.gif8-col:nth-child(3)>.column{
+    animation-delay: .2s;
+}
+.gif8-col:nth-child(4){
+    transform: rotate(135deg);
+}
+.gif8-col:nth-child(4)>.column{
+    animation-delay: .3s;
+}
+.gif8-col:nth-child(5){
+    transform: rotate(180deg);
+}
+.gif8-col:nth-child(5)>.column{
+    animation-delay: .4s;
+}
+.gif8-col:nth-child(6){
+    transform: rotate(225deg);
+}
+.gif8-col:nth-child(6)>.column{
+    animation-delay: .5s;
+}
+.gif8-col:nth-child(7){
+    transform: rotate(270deg);
+}
+.gif8-col:nth-child(7)>.column{
+    animation-delay: .6s;
+}
+.gif8-col:nth-child(8){
+    transform: rotate(315deg);
+}
+.gif8-col:nth-child(8)>.column{
+    animation-delay: .7s;
+}
+/* two animation*/
+@keyframes rotate{
+   0%{
+       transform: rotate(0deg)
+   }
+   50%{
+       transform: rotate(90deg);
+   }
+   75%{
+       transform: rotate(270deg);
+   }
+   100%{
+       transform: rotate(360deg);
+   }
+}
+@keyframes color-change{
+   0%{
+       background-color: lightgreen;
+   }
+   50%{
+       background-color: white;
+   }
+   75%{
+       background-color: lightgreen;
+   }
+   100%{
+       background-color: white;
+   }
+}
+.gif9-cir{
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    margin-top: -5px;
+    animation: rotate 1s infinite;
+}
+.gif9-cir>.circle{
+    display: inline-block;
+    position: relative;
+    right: 15px;
+    width: 10px;
+    height: 10px;
+    background-color: lightgreen;
+    border-radius: 50%;
+    animation: color-change 1s infinite;
+    animation-timing-function: ease-in;
+}
+.gif9-cir:nth-child(1){
+    animation-delay: 0s;
+}
+.gif9-cir:nth-child(1)>.circle{
+    animation-delay: 0s;
+}
+.gif9-cir:nth-child(2){
+    animation-delay: .05s;
+}
+.gif9-cir:nth-child(2)>.circle{
+    animation-delay: .05s;
+}
+.gif9-cir:nth-child(3){
+    animation-delay: .1s;
+}
+.gif9-cir:nth-child(3)>.circle{
+    animation-delay: .1s;
+}
+.gif9-cir:nth-child(4){
+    animation-delay: .15s;
+}
+.gif9-cir:nth-child(4)>.circle{
+    animation-delay: .15s;
+}
