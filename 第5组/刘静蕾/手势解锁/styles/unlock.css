@@ -1,0 +1,113 @@
+body{
+    width: 100%;
+    /* background-color: #485e74; */
+    background-color:#b8860b;
+}
+/* #unlock{
+    background-color: black;
+} */
+#time{
+    position: absolute;
+    width: 20%;
+    top: 20%;
+    left: 40%;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+#date{
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    width: 30%;
+    text-align: center;
+    color: white;
+}
+#unlock{
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    left: 10%;
+    top: 35%;
+}
+#unlock-icons{
+    text-align: center;
+    height: 300px;
+}
+.icon{
+    display: inline-block;
+    background-image: url(../img/planets2.jpg);
+    border-radius:50%; 
+    height: 70px;
+    width: 70px;
+    margin-left: 8%;
+    margin-bottom: 8%;
+}
+.cir{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius:50%;
+    position: relative;
+    top: 30px;
+    display: none;
+
+}
+#icon-1>span:nth-child(1){
+    background-position: 1042px 185px;
+    margin-left: -2%;
+}
+#icon-1>span:nth-child(2){
+    background-position: 168px 185px;
+}
+#icon-1>span:nth-child(3){
+    background-position: -182px 185px;
+}
+#icon-2>span:nth-child(1){
+    background-position: 515px 368px;
+    margin-left: -2%;
+}
+#icon-2>span:nth-child(2){
+    background-position: 167px 368px;
+}
+#icon-2>span:nth-child(3){
+    background-position: 82px 368px;
+}
+#icon-3>span:nth-child(1){
+    width: 68px;
+    height: 68px;
+    background-position: 515px 314.2px;
+    margin-left: -2%;
+}
+#icon-3>span:nth-child(2){
+    background-position: 167px 316px;
+}
+#icon-3>span:nth-child(3){
+    width: 68px;
+    height: 68px;
+    background-position: 82px 314.2px;
+}
+
+#message{
+    min-width: 100%;
+    text-align: center;
+}
+#message p{
+    color: white;
+    font-size: 15px;
+}
+#setting{
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    display: inline-block;
+    width: 100%;
+}
+a:nth-child(1){
+    position: absolute;
+    left: 0%;
+}
+a:nth-child(2){
+    position: absolute;
+    right: 4%;
+}
