@@ -1,18 +1,41 @@
 html,body{
-    background-color: black;
     color: white;
     width: 100%;
     height: 100%;
 }
-#result{
-    height: 10%
+#cal_body{
+    position: absolute;
+    height: 35%;
+    width: 40%;
+    top: 20%;
+    left: 30%;
+    background-color: black;
+}
+#show{
+    position: relative;
+    top: 5%;
+    text-align: right;
+    height: 10%;
+    width: 90%;
 }
 #hr{
-    margin-left: 25%;
+    position: relative;
+    left: 15%;
     display: inline-block;
-    border-top: 1px solid grey;
+    border-top: 3px solid grey;
     height: 1px;
-    width: 51%
+    width: 70%
+}
+#name{
+    position: relative;
+    right: -14%;
+    font-size: 12px;
+    margin:5px 0px;
+}
+#all_buttons{
+    width: 150%;
+    position: relative;
+    left: -25%;
 }
 .button{
     text-align: center;
@@ -20,8 +43,8 @@ html,body{
 }
 span{
     display: inline-block;
-    background-color: lightgrey;
-    border: 1px solid lightgray;
+    background-color: grey;
+    border: 1px solid gray;
     border-radius: 10%;
     height: 10%;
     width: 10%;
