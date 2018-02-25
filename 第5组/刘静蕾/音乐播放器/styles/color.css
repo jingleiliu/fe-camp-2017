@@ -1,0 +1,19 @@
+#title{
+    background-color: darkred;
+    color: white;
+}
+aside{
+    background-color: lightgray;
+}
+footer{
+    border-top:1px solid black; 
+}
+#pro{
+    background-color: lightgrey
+}
+.play{
+    background-color: lightgrey;
+}
+.checked{
+    background-color: gray;
+}

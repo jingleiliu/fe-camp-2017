@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/basic.css">
+</head>
+
+<body>
+    <div id="title">
+        <h1>U Music Player</h1>
+    </div>
+    <aside>
+        <li class="checked">
+            <a href="music.html">收藏的歌单</a>
+        </li>
+        <li>
+            <a href="singer.html">喜欢的歌手</a>
+        </li>
+        <li>
+            <a href="play.html">播放中...</a>
+        </li>
+    </aside>
+    <main>
+        <h2>我的歌单</h2>
+        <div id="musiclist">
+            <li value="3">blank space
+                <audio src="mp3/blankspace.mp3"></audio>
+            </li>
+            <li>被驯服的象
+                <audio src="mp3/elephant.mp3"></audio>
+            </li>
+            <li>方圆几里
+                <audio src="mp3/fangyuanjili.mp3"></audio>
+            </li>
+            <li>锦鲤抄
+                <audio src="mp3/jinlichao.mp3"></audio>
+            </li>
+            <li>追光者
+                <audio src="mp3/zhuiguangzhe.mp3"></audio>
+            </li>
+        </div>
+    </main>
+    <footer>
+        <div id="buttons">
+            <span id="lastplay"></span>
+            <span id="stop"></span>
+            <span id="nextplay"></span>
+        </div>
+        <div class="pp">
+            <div id="pro">
+                <span id="progress">
+                </span>
+            </div>
+            <span id="icon">
+                <span></span>
+            </span>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

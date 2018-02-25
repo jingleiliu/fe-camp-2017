@@ -1,0 +1,152 @@
+
+body,html{
+    width: 100%;
+    height: 100%;
+}
+#title{
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    text-align: center;
+}
+aside{
+    position: fixed;
+    top: 10%;
+    left: 0%;
+    width: 20%;
+    height: 78%;
+}
+aside>ul{
+    position: absolute;
+    left: 0%;
+}
+main{
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    width: 80%;
+    height: 78%;
+}
+main>h2{
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom:1px solid black; 
+}
+#musiclist>li{
+    
+padding: 10px 0px ;
+width: 100%;
+}
+#musiclist{
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 90%;
+}
+li{
+    padding:10px 0px;
+    font-size: 15px; 
+    list-style: none;
+}
+a{
+    color: black;
+}
+footer{
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+/* 按键 */
+#buttons{
+    width: 20%;
+}
+#buttons>span{
+    display: inline-block;
+    background-image: url(../img/buttons.jpeg);
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    margin-left: 10px;
+}
+#lastplay{
+    background-position: -270px -4px;
+}
+#play{
+    background-position: -4px -4px;
+}
+#stop{
+    background-position: -70px -4px;
+}
+#nextplay{
+    background-position: -204px -4px;
+}
+/* 进度条 */
+.pp{
+    position: absolute;
+    left: 20%; 
+    height: 20px;
+    width: 50%;   
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+#pro{
+    display: inline-block;
+    height: 5px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+@keyframes progress{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+#progress{
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: -100%;
+    height: 5px;
+    width: 100%;
+    background-color: darkred;
+}
+@keyframes icon{
+    from{
+        left: 0px;
+    }
+    to{
+        left: 579.5px;
+    }
+}
+#icon{
+    display: inline-block;
+    background-color: darkred;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+#icon>span{
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    top: 7.5px;
+    left: 7.5px;
+}
